@@ -1,6 +1,6 @@
 # Project 1: The Brochure Site
 
-## Problem Statement
+# Problem Statement
 
 You've been learning HTML and CSS over the previous lessons. You've been
 receiving specific guidance ("Use a `<link>` tag!") and have been steered by

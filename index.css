@@ -1,0 +1,280 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  /*background-image:url("http://www.kinyu-z.net/data/wallpapers/94/1029491.jpg");*/
+  background-color: #FAFAFA;
+  font-size: 20px;  
+  background-repeat: repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr/ 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "nav nav nav nav"
+  ". header imgheader ."
+  " . article aside . "
+  " . article newsletterbox . "
+  " . article socialbox . "
+  " . article . . "
+  "footer footer footer footer";
+  grid-gap: 50px;
+}
+header{
+  grid-area: header;
+  font-family: "Lucida Console";
+  font-size: 30px;
+  width:400px;
+  float: right;
+}
+nav{
+  grid-area: nav;
+  padding: 10px;
+  background-color: #3d3d29;
+  box-shadow: 5px 5px 5px #008080 ;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  color: white;
+}
+.imgheader{
+  grid-area: imgheader;
+  width:auto;
+  height: auto;
+  }
+article{
+  grid-area: article;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  padding: 30px;
+  max-width: auto;
+}
+aside{
+  grid-area: aside;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  padding: 30px;
+  max-width: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+.newsletterbox{
+  grid-area: newsletterbox;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  padding: 30px;
+  max-width: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+.socialbox{
+  grid-area: socialbox;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  padding: 30px;
+  max-width: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.menu{
+  text-decoration:none;/*delete underline of a link*/
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: static;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+    color: #00b386;
+}
+footer{
+  grid-area: footer;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+.facebook{
+  width: 40px;
+  height: 40px;
+}
+.instagram{
+  width: 40px;
+  height: 40px;
+}
+.twitter{
+  width: 40px;
+  height: 40px;
+}
+
+/*MEDIA*/
+@media only screen and (max-width:700px){
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  /*background-image:url("http://www.kinyu-z.net/data/wallpapers/94/1029491.jpg");*/
+  background-color: #FAFAFA;
+  font-size: 16px;  
+  background-repeat: repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns:1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "imgheader"
+  "header"
+  "article"
+  "aside"
+  "newsletterbox"
+  "socialbox"
+  "footer"
+  "nav";
+  grid-gap: 10px;
+}
+header{
+  grid-area: header;
+  font-family: "Lucida Console";
+  font-size: 20px;
+  width:100%;
+  height: 20%;
+}
+nav{
+  grid-area: nav;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3d3d29;
+  width: 100%;
+  height: 15px;
+}
+.imgheader{
+  grid-area: imgheader;
+  width:200px;
+  height: 200px;
+  }
+article{
+  grid-area: article;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  padding: 15px;
+  max-width: auto;
+}
+aside{
+  grid-area: aside;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 15px;
+  max-width: auto;
+  
+}
+.newsletterbox{
+  grid-area: newsletterbox;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 15px;
+  max-width: auto;
+}
+.socialbox{
+  grid-area: socialbox;
+  background-color: #E0E0E0;
+  border: 1px double #BDBDBD;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 15px;
+  max-width: auto;
+}
+
+.menu{
+  text-decoration:none;/*delete underline of a link*/
+  color: white;
+  font-size: 12.5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  }
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+    color: #00b386;
+}
+footer{
+  grid-area: footer;
+  width: 100%;
+  text-align: right;
+}
+.facebook{
+  width: 40px;
+  height: 40px;
+}
+.instagram{
+  width: 40px;
+  height: 40px;
+}
+.twitter{
+  width: 40px;
+  height: 40px;
+}
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #BDBDBD; /* Gray border */
+    border-radius: 20px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[id=idsubmit] {
+    background-color: #3d3d29;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #006064;
+    width: 100%;
+}
+input[id=idsubscribe] {
+    background-color: #3d3d29;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #BDBDBD;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+}
+input[id=subscribe]{
+    width: auto; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #BDBDBD; /* Gray border */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #00b386;
+}
